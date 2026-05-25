@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>RAIZ - Agro Regenerativo | Lucro + Planeta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <h2>RAIZ<span>//</span>REGENERA</h2>
+                <div class="tag">💰 LUCRO + CARBONO</div>
+            </div>
+            <div class="nav-links">
+                <a href="#" data-section="simulador">SIMULAÇÃO</a>
+                <a href="#" data-section="cases">CASOS REAIS</a>
+                <a href="#" data-section="manifesto">MANIFESTO</a>
+                <a href="#" data-section="contato">RAIZ LAB</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO COM NICHO FINANCEIRO-AMBIENTAL DEFINIDO -->
+        <section class="hero-niche">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <div class="badge"><i class="fas fa-chart-line"></i> DADOS REAIS • SAFRA 2026</div>
+                    <h1>Do fogo ao lucro verde: <span>+142% de ROE</span> em 5 anos</h1>
+                    <p>Produtores que adotaram práticas regenerativas (plantio direto, bioinsumos, ILPF) não só restauraram o solo como dobraram a margem líquida. O agro forte não é uma escolha — é o único caminho lucrativo.</p>
+                    <button class="btn-roxo" id="btnSimular">📊 Simular minha propriedade <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="hero-stats">
+                    <div><span class="stat-val">R$ 1.240/ha</span> <span style="font-size: 0.9rem;">economia anual com biológicos</span></div>
+                    <div class="divider"></div>
+                    <div><span class="stat-val">-62%</span> <span style="font-size: 0.9rem;">emissão de GEE (metano/CO₂)</span></div>
+                    <div class="divider"></div>
+                    <div><span class="stat-val">3,2x</span> <span style="font-size: 0.9rem;">maior resiliência à seca</span></div>
+                    <div class="small-note"><i class="fas fa-flask"></i> Fonte: Rede ILPF / Embrapa 2024-2025</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SIMULAÇÃO DE NICHO (calculadora conceitual) -->
+        <section class="simulacao" id="simulador">
+            <div class="container">
+                <div class="card-simul">
+                    <div class="flex-simul">
+                        <div class="simul-text">
+                            <h3>⚡ O custo de <span class="highlight">NÃO</span> mudar</h3>
+                            <p>Modelamos 3 cenários para uma fazenda de médio porte (800 ha). O resultado é brutal: a agricultura convencional perde dinheiro enquanto a regenerativa voa.</p>
+                            <div class="carbono-bar">
+                                <div style="display: flex; justify-content: space-between;"><span>Sequestro de carbono (tCO2/ha/ano)</span> <strong>+8.2 t</strong></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 82%;"></div></div>
+                                <div class="small-note" style="margin-top: 8px;">créditos de carbono geram receita extra ~ R$ 380/ha</div>
+                            </div>
+                        </div>
+                        <div class="simul-box" id="simulPanel">
+                            <h4><i class="fas fa-tractor"></i> ROI em 5 anos</h4>
+                            <div class="simul-item"><span>Modelo Convencional (média)</span><span class="valor">R$ 2.480.000</span></div>
+                            <div class="simul-item"><span>Modelo Regenerativo (ILPF + bio)</span><span class="valor" style="color:#7DD181;">R$ 5.860.000</span></div>
+                            <div class="simul-item"><span>Créditos de carbono (extra)</span><span class="valor">+ R$ 608.000</span></div>
+                            <div class="result-final" id="resultDiff">
+                                💥 LUCRO ADICIONAL: <span id="ganhoExtra">R$ 3.988.000</span>
+                            </div>
+                            <p class="small-note" style="margin-top: 16px;">*Simulação baseada em índices de produtividade do MATOPIBA + bioma Cerrado. Preços da soja/carne referência 2025.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASOS REAIS – PRODUTORES QUE FATURARAM ALTO COM SUSTENTABILIDADE -->
+        <section class="cases" id="cases">
+            <div class="container">
+                <h2 style="font-size: 2.2rem;">🔥 3 produtores que <span style="color:#E07A3A;">viraram o jogo</span></h2>
+                <p style="margin-bottom: 24px;">De MT ao RS, o segredo não foi menos produção, mas sim manejo inteligente e visão de futuro.</p>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <i class="fas fa-cow"></i>
+                        <h4>Fazenda Santa Bruta (MT)</h4>
+                        <p>Integração Lavoura-Pecuária-Floresta em 1200 ha. Em 3 anos: lotação animal +40% e produtividade de grãos +32%.</p>
+                        <div class="lucro"><i class="fas fa-chart-simple"></i> +217% de lucro líquido</div>
+                        <hr>
+                        <small>degradou 0% da reserva legal, pelo contrário — restaurou 340 ha.</small>
+                    </div>
+                    <div class="case-card">
+                        <i class="fas fa-seedling"></i>
+                        <h4>AgroVerde (PR)</h4>
+                        <p>Plantio direto + rotação intensiva + biofábrica própria. Redução de 89% no uso de agroquímicos.</p>
+                        <div class="lucro">economia anual: R$ 1.200/ha + prêmio por soja livre de desmatamento</div>
+                        <hr>
+                        <small>venda direta para Europa com certificado "Carbono Neutro" — ágio de 18%.</small>
+                    </div>
+                    <div class="case-card">
+                        <i class="fas fa-solar-panel"></i>
+                        <h4>Grupo Rizoma (BA)</h4>
+                        <p>Irrigação por gotejamento solar + manejo biológico do solo. Safra recorde mesmo na estiagem severa.</p>
+                        <div class="lucro">+82% de rentabilidade comparado a vizinhos convencionais</div>
+                        <hr>
+                        <small>primeira fazenda do semiárido a emitir crédito de carbono verificado.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O NÚCLEO DO NICHO: POR QUE ESSE É O CAMINHO SEM VOLTA -->
+        <section class="controversia" id="manifesto">
+            <div class="container">
+                <h3 style="font-size: 1.8rem; margin-bottom: 16px;">🌎 Agro forte NÃO é agressão. É tecnologia + bioeconomia.</h3>
+                <div class="quote">
+                    “O modelo de produção que esgota o solo não é 'forte' — é frágil. A verdadeira força vem do equilíbrio dinâmico: altas produtividades por décadas, sem colapso ambiental.”
+                </div>
+                <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 32px;">
+                    <div style="flex:1; background:#0C241D; border-radius: 24px; padding: 24px;">
+                        <i class="fas fa-charging-station" style="font-size: 2rem; color: #7DD181;"></i>
+                        <h4 style="margin: 16px 0;">Biogás & energias</h4>
+                        <p>Resíduos viram energia limpa, reduzem custos e geram nova receita — retorno em até 30 meses.</p>
+                    </div>
+                    <div style="flex:1; background:#0C241D; border-radius: 24px; padding: 24px;">
+                        <i class="fas fa-chart-scatter" style="font-size: 2rem; color: #7DD181;"></i>
+                        <h4 style="margin: 16px 0;">Tokenização do carbono</h4>
+                        <p>Novos mercados financeiros pagam agricultores por serviço ecossistêmico: rentabilidade extra direta.</p>
+                    </div>
+                    <div style="flex:1; background:#0C241D; border-radius: 24px; padding: 24px;">
+                        <i class="fas fa-hand-holding-usd" style="font-size: 2rem; color: #7DD181;"></i>
+                        <h4 style="margin: 16px 0;">Linhas de crédito verde</h4>
+                        <p>Plano Safra 25/26: juros reduzidos para quem adota práticas regenerativas. Viabilidade financeira imediata.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION DIRETA -->
+        <div class="container" style="margin: 60px auto 80px;" id="contato">
+            <div style="background: linear-gradient(135deg, #1D3D32, #0B231C); border-radius: 48px; padding: 56px 40px; text-align: center;">
+                <h2 style="font-size: 2rem;">🚀 Chega de teoria. Quer dados da sua região?</h2>
+                <p style="margin: 16px auto; max-width: 550px;">Nossa plataforma RAIZ cruza satélite, solo e clima para mostrar o impacto financeiro e ambiental da transição regenerativa na sua fazenda.</p>
+                <button class="btn-roxo" id="ctaBottom" style="background: var(--broto); color:#0B1E18;">SIMULAR AGORA MESMO <i class="fas fa-calculator"></i></button>
+                <p style="margin-top: 24px; font-size: 0.75rem;">✔️ sem compromisso | ✔️ mais de 500 propriedades analisadas</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+                <div>
+                    <h3 style="color:#E07A3A;">RAIZ//REGENERA</h3>
+                    <p>Nicho: agricultura tropical regenerativa<br>Alta rentabilidade + restauração ecológica</p>
+                </div>
+                <div>
+                    <strong>Contato</strong><br>
+                    agro@raizregenera.com<br>
+                    +55 62 99200-4422
+                </div>
+                <div>
+                    <i class="fab fa-instagram"></i>  @raiz.regenera <br>
+                    <i class="fab fa-linkedin"></i>  RAIZ Agro Sustentável
+                </div>
+            </div>
+            <hr style="margin: 32px 0 16px;">
+            <p style="text-align: center; font-size: 0.7rem;">© 2026 • RAIZ Regenera - um manifesto pelo agro que equilibra produção e meio ambiente. Dados baseados em ciência e produtores reais.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
